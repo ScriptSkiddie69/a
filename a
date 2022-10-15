@@ -1,0 +1,7 @@
+char.Humanoid.StateChanged:Connect(function(oldstate,newstate)
+    if newstate == Enum.HumanoidStateType.Landed then
+        char.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true)
+
+        print("resetting jump cd")
+    end
+end)
